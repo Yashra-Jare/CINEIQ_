@@ -1,0 +1,13 @@
+pandas
+numpy
+scikit-learn
+scikit-surprise
+nltk
+transformers
+torch
+fastapi
+uvicorn
+streamlit
+plotly
+mlflow
+lime
