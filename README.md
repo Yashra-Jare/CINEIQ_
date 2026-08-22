@@ -23,7 +23,7 @@ MovieLens ratings ──> SVD ──> user-specific predicted rating
 
 ```text
 CINEIQ/
-├── ml_engine/
+├── ML-engine/
 │   ├── __init__.py
 │   ├── collaborative.py
 │   ├── content.py
@@ -76,7 +76,7 @@ Open the Streamlit URL shown in the terminal. The API also exposes `/health` and
 
 ## Sentiment module
 
-`ml_engine/nlp_reranker.py` implements VADER scoring and a bounded ±20% multiplier **when a movie-title-to-review mapping is supplied**. The standard IMDb 50K sentiment dataset contains reviews and sentiment labels but does not provide a reliable movie-title key, so the module is intentionally not connected to the main pipeline by default. This avoids assigning a review to the wrong movie.
+`ML-engine/nlp_reranker.py` implements VADER scoring and a bounded ±20% multiplier **when a movie-title-to-review mapping is supplied**. The standard IMDb 50K sentiment dataset contains reviews and sentiment labels but does not provide a reliable movie-title key, so the module is intentionally not connected to the main pipeline by default. This avoids assigning a review to the wrong movie.
 
 ## Experiment tracking
 
